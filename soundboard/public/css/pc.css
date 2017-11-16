@@ -1,0 +1,95 @@
+div#mbody {
+    display: flex;
+    flex-flow: row wrap;
+}
+div.unitWrapper {
+    flex: 0 1 auto;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+body {
+    font-size: 14px;
+}
+div.heading {
+    margin-top: 40px;
+}
+main {
+    margin-top: 50px;
+    min-height: 600px;
+}
+h1 {
+    font-size: 36px;
+}
+.switch {
+    width: 40px;
+    height: 20px;
+}
+.slider:before {
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.menu {
+    margin-top: 15px;
+}
+div.imgWrapper {
+    min-width: 140px;
+}
+.icons {
+    padding-top: 27%;
+    width: 60px;
+    height: 60px;
+}
+@media screen and (min-width: 1024px) {
+    #dropdownWrapper, #switherWrapper, #themesWrapper {
+        position: relative;
+        display: inline-block;
+    }
+    #dropdownWrapper {
+        margin-right: 10%;
+    }
+    #themesWrapper {
+        margin-right: 10%;
+    }
+    div#mbody {
+        margin-left: 18%;
+        margin-right: 10%;
+    }
+    div.imgWrapper {
+        width: 15%;
+        height: 150px;
+    }
+    .icons {
+        padding-top: 27%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #dropdownWrapper {
+        margin-bottom: 5px;
+    }
+    #themesWrapper {
+        margin-bottom: 5px;
+    }
+    div#mbody {
+        margin-left: 30%;
+        margin-right: 10%;
+    }
+    div.imgWrapper {
+        margin-right: 10%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    div.imgWrapper {
+        width: 10%;
+        height: 130px;
+    }
+    .icons {
+        padding-top: 20%;
+    }
+}

@@ -1,0 +1,59 @@
+body {
+    font-size: 14px;
+}
+div.heading {
+    margin-top: 40px;
+}
+main {
+    margin-top: 20px;
+    min-height: 600px;
+}
+h1 {
+    font-size: 36px;
+}
+.switch {
+    width: 40px;
+    height: 20px;
+}
+.slider:before {
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+}
+.menu {
+    margin-top: 15px;
+}
+div.imgWrapper {
+    min-width: 140px;
+}
+.icons {
+    padding-top: 27%;
+    width: 60px;
+    height: 60px;
+}
+#switherWrapper, #themesWrapper {
+    display: block;
+}
+select {
+    border: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+div#mbody {
+    text-align: center;
+}
+div.imgWrapper {
+    margin-bottom: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 150px;
+}
+.icons {
+    padding-top: 27%;
+}

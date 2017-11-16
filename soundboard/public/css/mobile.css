@@ -1,0 +1,54 @@
+#dropdownWrapper {
+    margin-bottom: 5px;
+}
+#dropdownWrapper, #switherWrapper, #themesWrapper {
+    position: relative;
+    display: inline-block;
+}
+#themesWrapper {
+    margin-bottom: 5px;
+}
+div.imgWrapper {
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 14px;
+}
+div.heading {
+    margin-top: 150px;
+}
+select {
+    border: 100px;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+}
+option {
+    font-size: 25px;
+}
+.icons {
+    padding-top: 18%;
+    width: 200px;
+    height: 200px;
+}
+.menu {
+    margin-top: 10px;
+}
+.switch {
+    width: 70px;
+    height: 40px;
+}
+.slider:before {
+    height: 35px;
+    width: 35px;
+    left: 3px;
+    bottom: 3px;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+}

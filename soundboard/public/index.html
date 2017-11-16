@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Amazing Sound Board
+    </title>
+    <!-- BEGIN TRACKJS -->
+    <script type="text/javascript">window._trackJs = { token: '70a2575290034e1ea961bb88f8a06ef7' };</script>
+    <script src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+    <!-- END TRACKJS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+<div class="navWrapper">
+    <div class="container">
+        <ul class="navList">
+            <li role="presentation">
+                <a href="#"> Login </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container heading">
+    <div class="panel-heading" id="panel-heading">
+        <header>
+            <h1> SoundBoard </h1>
+        </header>
+    </div>
+    <div class="menu">
+        <div id="dropdownWrapper">
+            <label>Content Style:
+            <select id="dropDown" onchange="changeStyle(this)">
+                <option value="HW2">Simpsons</option>
+                <option value="SB">Spongebob</option>
+            </select>
+            </label>
+        </div>
+
+        <div id="themesWrapper">
+            <label>Theme Style:
+            <select onchange="changeThemes(this)">
+                <option value="White">White</option>
+                <option value="SpongeTheme">SpongeBob</option>
+                <option value="SimpTheme">Simpsons</option>
+            </select>
+            </label>
+        </div>
+
+        <div id="switherWrapper">
+            <label>Compact</label>
+            <label class="switch" onclick="changeFormat(this)">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <label>Rich</label>
+        </div>
+    </div>
+</div>
+<main>
+    <div id="mbody">
+    </div>
+    <noscript>
+        <h1>
+            Oops!!<br>
+            You browser does not support JavaScript!
+        </h1>
+    </noscript>
+    <template id="item">
+        <div class="unitWrapper">
+            <div class="imgWrapper" onclick="playSound(this)">
+                <img class="icons"
+                     src="picture/ic_play_circle_outline_black_24dp_2x.png" alt="playIcon">
+                <audio>
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </div>
+            <div id="labelWrapper">
+                <label class="compactLabel"></label><br>
+                <label>&nbsp;</label>
+            </div>
+        </div>
+    </template>
+</main>
+<footer>
+    <div class="container">
+        <p class="footerText"> all work &copy; Team yaozilong
+            2017 -   &nbsp;&bull;&nbsp;all rights reserved
+        </p>
+    </div>
+</footer>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <img src="picture/homescreen1.png" alt="logo">
+        <p id="error"></p>
+        <button class="close" onclick="closeTag(this)">Alright</button>
+    </div>
+
+</div>
+<script src="script/js.js"></script>
+
+</body>
+</html>
